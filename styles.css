@@ -1531,3 +1531,414 @@ body {
     gap: 2rem;
   }
 }
+
+/* ================= COMPREHENSIVE MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  /* --- Global --- */
+  body {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  /* --- Navbar --- */
+  .navbar-shell {
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    /* Hide nav links on mobile — can add hamburger later */
+  }
+
+  .btn-nav {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  /* --- Hero --- */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .hero-content {
+    padding: 2.5rem 1.5rem 2rem;
+    border-radius: 20px;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+    justify-content: center;
+  }
+
+  .avatar-group {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .customers-text {
+    font-size: 0.85rem !important;
+    margin-left: 8px !important;
+  }
+
+  .proof-text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .hero-partner-logo {
+    width: 180px !important;
+    margin-top: 10px !important;
+  }
+
+  /* Hero right column image */
+  .hero-visual {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .image-placeholder-container {
+    min-height: 280px;
+    border-radius: 20px;
+  }
+
+  /* Hide floating pills on mobile */
+  .pill,
+  .graph-card {
+    display: none;
+  }
+
+  /* --- Mission Section --- */
+  .mission-section {
+    padding: 3rem 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 20px;
+  }
+
+  .mission-heading {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-mission {
+    padding: 0.85rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  /* --- Features Slider --- */
+  .features-section {
+    padding: 3rem 0;
+    margin-top: 0.5rem;
+    border-radius: 20px;
+  }
+
+  .features-header {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .features-heading {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .features-desc {
+    font-size: 0.9rem;
+  }
+
+  .slider-track {
+    padding: 0 1.5rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .feature-card {
+    flex: 0 0 280px;
+    min-height: 320px;
+    padding: 1.5rem;
+  }
+
+  .card-pill {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-desc {
+    font-size: 0.85rem;
+  }
+
+  .slider-mask {
+    width: 40px;
+  }
+
+  /* --- Success Grid (Built by Celeritech) --- */
+  .success-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .success-heading {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  .success-desc {
+    font-size: 0.9rem;
+  }
+
+  .success-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .success-card {
+    padding: 1.5rem;
+    min-height: auto;
+    border-radius: 20px;
+  }
+
+  .success-visual {
+    min-height: 200px;
+    margin-bottom: 1.5rem;
+  }
+
+  .st-title {
+    font-size: 1.05rem;
+  }
+
+  .st-desc {
+    font-size: 0.85rem;
+  }
+
+  /* --- Core Features / Q&A --- */
+  .core-features-section {
+    margin-top: 0.5rem;
+  }
+
+  .core-container {
+    padding: 3rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .core-header {
+    margin-bottom: 2rem;
+  }
+
+  .core-heading {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .core-desc {
+    font-size: 0.9rem;
+  }
+
+  .core-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .core-image-placeholder {
+    min-height: 250px;
+    border-radius: 20px;
+  }
+
+  .cf-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .cf-title {
+    font-size: 1rem;
+  }
+
+  .cf-desc {
+    font-size: 0.85rem;
+  }
+
+  /* --- Pricing --- */
+  .pricing-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .pricing-heading {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  .pricing-desc {
+    font-size: 0.9rem;
+  }
+
+  .pricing-header {
+    margin-bottom: 2rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pricing-card {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .pricing-card-light,
+  .pricing-card-white {
+    margin-top: 0;
+  }
+
+  .pc-price {
+    font-size: 2.5rem;
+  }
+
+  .pc-body {
+    padding: 1.5rem;
+  }
+
+  .btn-pricing {
+    margin-bottom: 1.5rem;
+  }
+
+  /* --- Testimonials --- */
+  .testimonials-section {
+    padding: 3rem 0;
+  }
+
+  .testimonials-header {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-heading {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  .testimonials-desc {
+    font-size: 0.9rem;
+  }
+
+  .testimonials-track {
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .testimonial-card {
+    width: 280px;
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .tc-review {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* --- Footer --- */
+  .site-footer {
+    padding: 1.5rem 0.5rem 1rem;
+  }
+
+  .footer-container {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-heading {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .footer-subscribe {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .footer-input {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    min-width: 0;
+    flex: 1 1 60%;
+  }
+
+  .btn-subscribe {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .footer-middle {
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small screens (< 400px) */
+@media (max-width: 400px) {
+  .hero-heading {
+    font-size: 1.75rem;
+  }
+
+  .hero-content {
+    padding: 2rem 1.2rem;
+  }
+
+  .feature-card {
+    flex: 0 0 260px;
+  }
+
+  .testimonial-card {
+    width: 260px;
+  }
+
+  .footer-subscribe {
+    border-radius: 16px;
+    padding: 0.4rem;
+  }
+
+  .btn-subscribe {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 0.25rem;
+  }
+}
