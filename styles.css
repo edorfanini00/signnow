@@ -1547,8 +1547,7 @@ body {
   }
 
   .nav-links {
-    display: none;
-    /* Hide nav links on mobile — can add hamburger later */
+    display: none !important;
   }
 
   .btn-nav {
@@ -1886,20 +1885,24 @@ body {
 
   .footer-subscribe {
     max-width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 16px;
+    gap: 0.5rem;
   }
 
   .footer-input {
     font-size: 0.9rem;
     padding: 0.8rem 1rem;
     min-width: 0;
-    flex: 1 1 60%;
+    width: 100%;
   }
 
   .btn-subscribe {
     padding: 0.8rem 1.2rem;
     font-size: 0.9rem;
     white-space: nowrap;
+    width: 100%;
+    border-radius: 12px;
   }
 
   .footer-middle {
