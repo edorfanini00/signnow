@@ -1533,7 +1533,7 @@ body {
 }
 
 /* ================= COMPREHENSIVE MOBILE FIX ================= */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   /* --- Global --- */
   body {
