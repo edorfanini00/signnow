@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisora Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Phosphor Icons for the plus icons in the pills -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Schema Markup (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SAP Business One SignNow Connector",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "ERP Integration",
+    "operatingSystem": "SAP Business One 10+",
+    "description": "Native eSignature integration for SAP Business One. Send documents for signature, track status, and auto-file signed PDFs back to SAP without leaving your ERP.",
+    "offers": {
+      "@type": "Offer",
+      "price": "1700",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Celeritech International Corp"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Celeritech International Corp",
+      "url": "https://www.celeritech.biz",
+      "logo": "https://www.celeritech.biz/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1200 Brickell Ave, Suite 310",
+        "addressLocality": "Miami",
+        "addressRegion": "FL",
+        "postalCode": "33131",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-786-238-6494",
+        "contactType": "sales",
+        "email": "claudia.ochoa@celeritech.biz",
+        "areaServed": ["US", "MX", "LATAM"],
+        "availableLanguage": ["English", "Spanish"]
+      }
+    },
+    "featureList": [
+      "One-click signature requests from SAP Business One",
+      "Real-time status tracking",
+      "Automated reminder sequences",
+      "Automatic PDF attachment to SAP records",
+      "Email and WhatsApp delivery",
+      "Multi-signer support",
+      "Audit trail and compliance reporting"
+    ],
+    "softwareVersion": "2026",
+    "releaseNotes": "Compatible with SAP Business One 9.3 and higher, HANA and SQL platforms"
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+    <!-- Navbar Shell -->
+    <header class="navbar-shell">
+      <div class="logo">
+        <img src="celeritech-logo.png" alt="CeleriTech Logo" style="height: 36px; width: auto;">
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">About us</a>
+        <a href="#">Blog</a>
+      </nav>
+
+      <button class="btn btn-primary btn-nav">Contact us</button>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="hero-grid">
+
+      <!-- Left Column -->
+      <section class="hero-content">
+        <h1 class="hero-heading">SAP Business One eSignature Integration: Send, Sign, Auto-File</h1>
+        <p class="hero-desc">
+          Turn SAP Business One into your system of record for eSignatures. Trigger signature requests, track real-time
+          status, and automatically store signed documents back to SAP—every time.
+        </p>
+
+        <div class="action-buttons">
+          <button class="btn btn-primary btn-large">
+            Request a Demo
+            <i class="ph ph-arrow-right"></i>
+          </button>
+          <button class="btn btn-outline btn-large">Watch 2-Min Video</button>
+        </div>
+
+        <div class="social-proof">
+          <div class="avatar-group">
+            <div class="avatar av-1"></div>
+            <div class="avatar av-2"></div>
+            <div class="avatar av-3"></div>
+            <div class="avatar av-4"></div>
+            <div class="avatar text-avatar">SAP</div>
+            <span class="customers-text"
+              style="font-weight: 600; font-size: 0.95rem; margin-left: 12px; color: var(--color-dark);">100+
+              customers</span>
+          </div>
+          <span class="proof-text">✅ 79% signed &lt; 24h &nbsp; ✅ 75% faster turnaround &nbsp; ✅ Go live in &lt; 1
+            week</span>
+          <img src="signnow-logo.png" alt="airSlate SignNow" class="hero-partner-logo"
+            style="width: 250px; height: auto; object-fit: contain; margin-top: 15px;" />
+        </div>
+      </section>
+
+      <!-- Right Column (Image Container wrapper) -->
+      <section class="hero-visual">
+        <div class="image-placeholder-container"
+          style="background-image: url('hero-image-white.jpg'); background-size: cover; background-position: center; background-color: transparent; box-shadow: none;">
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Mission / Second Section -->
+    <section class="mission-section">
+      <h2 class="mission-heading">
+        Accelerate contract approvals with an easy-to-use eSignature solution that natively integrates with SAP Business
+        One.
+      </h2>
+
+      <button class="btn btn-primary btn-large btn-mission">
+        Contact us
+        <i class="ph ph-arrow-right"></i>
+      </button>
+    </section>
+
+    <!-- Slider / Third Section -->
+    <section class="features-section">
+      <div class="features-header">
+        <h2 class="features-heading">Speed up workflows using SignNow SAP B1</h2>
+        <p class="features-desc">
+          Here are the key benefits of integrating airSlate SignNow directly into your SAP Business One environment.
+        </p>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="slider-track" id="featureSlider">
+
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="card-pill">Benefit 1</div>
+            <div class="card-icon-wrapper">
+              <img src="new-icon.png" alt="One click cursor" class="card-icon" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">eSign documents in one click</h3>
+              <p class="card-desc">
+                Send quotes, sales orders, and contracts directly from SAP. Deliver via email or WhatsApp without
+                switching systems or manual exports.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="card-pill">Benefit 2</div>
+            <div class="card-icon-wrapper">
+              <img src="tracking-icon.png" alt="Automated tracking" class="card-icon" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Automated tracking</h3>
+              <p class="card-desc">
+                Track signature status in real-time with automated notifications. Set reminders, resend, or cancel
+                requests—all from within SAP.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="card-pill">Benefit 3</div>
+            <div class="card-icon-wrapper">
+              <img src="filing-icon.png" alt="Automatic filing" class="card-icon" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Automatic filing</h3>
+              <p class="card-desc">
+                Signed documents automatically attach back to the original SAP record. Achieve 100% compliance with zero
+                manual downloads or filing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="card-pill">Benefit 4</div>
+            <div class="card-icon-wrapper">
+              <img src="templates-icon.png" alt="Integrated templates" class="card-icon" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Integrated templates</h3>
+              <p class="card-desc">
+                Use your own print-layouts within SAP. Trigger signature requests while maintaining consistent branding
+                across all customer documents.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="card-pill">Benefit 5</div>
+            <div class="card-icon-wrapper">
+              <img src="workflows-icon.png" alt="Trackable workflows" class="card-icon" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Trackable workflows</h3>
+              <p class="card-desc">
+                Go beyond basic signing: automatically create sales orders after signature, or include payment links
+                tied directly to AR invoices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card">
+            <div class="card-pill">Benefit 6</div>
+            <div class="card-icon-wrapper">
+              <img src="security-icon.png" alt="Security shield" class="card-icon" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Industry-leading security</h3>
+              <p class="card-desc">
+                Built on secure infrastructure with 256-bit encryption and SOC 2 Type II compliance, keeping SAP as your
+                audit-ready system.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Fading masks for edges to simulate infinite scroll visually -->
+        <div class="slider-mask slider-mask-left"></div>
+        <div class="slider-mask slider-mask-right"></div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="nav-btn" id="btnPrev"><i class="ph ph-caret-left"></i></button>
+        <button class="nav-btn" id="btnNext"><i class="ph ph-caret-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Empowering Success / Fourth Section -->
+    <section class="success-section">
+      <div class="success-header">
+        <h2 class="success-heading">Built by Celeritech: SAP Integration Experts</h2>
+        <p class="success-desc">
+          Celeritech, an SAP-focused systems integrator with over 20 years of experience,
+          designed this integration to support document-heavy operations inside SAP Business One.
+        </p>
+      </div>
+
+      <div class="success-grid">
+
+        <!-- Card 1: Intuitive user interface (Gauge) -->
+        <div class="success-card">
+          <div class="success-visual">
+            <div class="ui-widget ui-timeline">
+              <div class="timeline-bars">
+                <div class="t-bar-col">
+                  <div class="t-bar t-bar-1"></div>
+                </div>
+                <div class="t-bar-col">
+                  <div class="t-bar t-bar-2"></div>
+                </div>
+                <div class="t-bar-col">
+                  <div class="t-bar t-bar-3"></div>
+                </div>
+              </div>
+              <div class="timeline-badge-wrapper">
+                <div class="timeline-badge-glow"></div>
+                <div class="timeline-badge">20+</div>
+                <div class="timeline-sub">Years</div>
+              </div>
+            </div>
+          </div>
+          <div class="success-text">
+            <span class="st-title">20+ Years Expertise</span>
+            <span class="st-desc">Supporting SAP Business One implementations globally</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Automated processes (Sync Rings) -->
+        <div class="success-card">
+          <div class="success-visual">
+            <div class="ui-widget ui-network">
+              <svg viewBox="0 0 200 160" class="network-svg">
+                <path d="M 100,100 L 40,50" class="net-line" />
+                <path d="M 100,100 L 100,20" class="net-line" />
+                <path d="M 100,100 L 160,50" class="net-line" />
+              </svg>
+              <div class="net-node net-center"><span class="net-label">SAP</span></div>
+              <div class="net-node net-orbit net-o1"><i class="ph-fill ph-factory"></i></div>
+              <div class="net-node net-orbit net-o2"><i class="ph-fill ph-truck"></i></div>
+              <div class="net-node net-orbit net-o3"><i class="ph-fill ph-first-aid"></i></div>
+            </div>
+          </div>
+          <div class="success-text">
+            <span class="st-title">100+ Integrations</span>
+            <span class="st-desc">Across manufacturing, distribution, professional services, and healthcare</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Advanced security (Shield) -->
+        <div class="success-card">
+          <div class="success-visual">
+            <div class="ui-widget ui-blocks">
+              <div class="block b-main">
+                <i class="ph-fill ph-puzzle-piece"></i>
+              </div>
+              <div class="block b-sub b-s1"></div>
+              <div class="block b-sub b-s2"></div>
+              <div class="block b-sub b-s3"></div>
+            </div>
+          </div>
+          <div class="success-text">
+            <span class="st-title">SMB Specialists</span>
+            <span class="st-desc">We understand the unique workflow challenges of growing businesses</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Secure transactions (Chart overlay) -->
+        <div class="success-card">
+          <div class="success-visual">
+            <div class="ui-widget ui-infinity">
+              <svg viewBox="0 0 200 100" class="infinity-svg">
+                <!-- Base loop -->
+                <path
+                  d="M 60,50 C 60,20 20,20 20,50 C 20,80 60,80 100,50 C 140,20 180,20 180,50 C 180,80 140,80 100,50 Z"
+                  fill="none" stroke="#fff0e6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                <!-- Animated orange trace -->
+                <path d="M 60,50 C 60,20 20,20 20,50 C 20,80 60,80 100,50 C 140,20 180,20 180,50" fill="none"
+                  stroke="#ff5722" stroke-width="8" stroke-linecap="round" class="inf-trace" />
+              </svg>
+              <div class="inf-dot inf-d1"></div>
+              <div class="inf-dot inf-d2"></div>
+            </div>
+          </div>
+          <div class="success-text">
+            <span class="st-title">Repeatable Delivery</span>
+            <span class="st-desc">Proven implementation methodology with predictable timelines and minimal
+              disruption</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Core Features / Fifth Section -->
+    <section class="core-features-section">
+      <div class="core-container">
+
+        <div class="core-header">
+          <h2 class="core-heading">Questions & Answers: Everything you need to know</h2>
+          <p class="core-desc">
+            Find answers to the most frequently asked questions about the SAP Business One SignNow connector.
+          </p>
+        </div>
+
+        <div class="core-grid">
+
+          <!-- Left Column: Two stacked cards -->
+          <div class="core-col core-col-left">
+
+            <div class="core-card">
+              <div class="core-pill">
+                <i class="ph ph-chart-bar"></i>
+              </div>
+              <div class="core-text-block">
+                <span class="core-title">How does it benefit my business?</span>
+                <span class="core-desc">Sends documents for eSignature without leaving SAP, reducing paper costs and
+                  saving 15+ mins per form.</span>
+              </div>
+            </div>
+
+            <div class="core-card">
+              <div class="core-pill">
+                <i class="ph ph-device-mobile"></i>
+              </div>
+              <div class="core-text-block">
+                <span class="core-title">How does the workflow operate?</span>
+                <span class="core-desc">Create a quote, click "Request to Sign", and the signed PDF auto-files back to
+                  the original SAP record.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Center Column: Image Placeholder -->
+          <div class="core-col core-col-center">
+            <div class="core-image-placeholder"></div>
+          </div>
+
+          <!-- Right Column: Two stacked cards -->
+          <div class="core-col core-col-right">
+
+            <div class="core-card">
+              <div class="core-pill">
+                <i class="ph ph-pencil-simple"></i>
+              </div>
+              <div class="core-text-block">
+                <span class="core-title">Can I use different documents?</span>
+                <span class="core-desc">The standard works with quotes and orders, but can be customized for employee or
+                  vendor agreements.</span>
+              </div>
+            </div>
+
+            <div class="core-card">
+              <div class="core-pill">
+                <i class="ph-fill ph-shield-check"></i>
+              </div>
+              <div class="core-text-block">
+                <span class="core-title">Is it suitable for small businesses?</span>
+                <span class="core-desc">Yes! Quick setup in under a week, simple pricing, and enterprise efficiency
+                  without complex training.</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div> <!-- end core-grid -->
+      </div> <!-- end core-container -->
+    </section>
+
+    <!-- Pricing / Sixth Section -->
+    <section class="pricing-section">
+      <div class="pricing-header">
+        <h2 class="pricing-heading">Simple, Transparent Pricing</h2>
+        <p class="pricing-desc">
+          Choose the SAP Business One connector configuration that fits your needs.
+          Simple pricing for powerful eSignature management.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Starter Plan (Left) -->
+        <div class="pricing-card pricing-card-light">
+          <div class="pc-header">
+            <h3 class="pc-title">Additional Types</h3>
+            <div class="pc-price-block">
+              <span class="pc-price">$340</span><span class="pc-period">/year/doc</span>
+            </div>
+            <p class="pc-subtitle">For each additional document type or company database</p>
+          </div>
+          <button class="btn btn-primary btn-pricing">Contact us</button>
+
+          <div class="pc-features">
+            <h4 class="pc-features-title">Features:</h4>
+            <ul class="pc-feature-list">
+              <li><i class="ph-fill ph-check-circle"></i> All Standard features</li>
+              <li><i class="ph-fill ph-check-circle"></i> Expand to HR contracts</li>
+              <li><i class="ph-fill ph-check-circle"></i> Add vendor agreements</li>
+              <li><i class="ph-fill ph-check-circle"></i> Include Purchase Orders</li>
+              <li><i class="ph-fill ph-check-circle"></i> Add multiple company databases</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Professional Plan (Middle - Most Popular) -->
+        <div class="pricing-card pricing-card-pro">
+          <div class="pc-badge">Most Popular</div>
+          <div class="pc-body">
+            <div class="pc-header">
+              <h3 class="pc-title">Standard Connector</h3>
+              <div class="pc-price-block">
+                <span class="pc-price">$1,700</span><span class="pc-period">/year</span>
+              </div>
+              <p class="pc-subtitle">For one SAP B1 company and one document type (e.g. quotes)</p>
+            </div>
+            <button class="btn btn-primary btn-pricing">Contact us</button>
+
+            <div class="pc-features">
+              <h4 class="pc-features-title">Features:</h4>
+              <ul class="pc-feature-list">
+                <li><i class="ph-fill ph-check-circle text-green"></i> One-click "Request to Sign"</li>
+                <li><i class="ph-fill ph-check-circle text-green"></i> Real-time status tracking</li>
+                <li><i class="ph-fill ph-check-circle text-green"></i> Automatic PDF filing back to SAP</li>
+                <li><i class="ph-fill ph-check-circle text-green"></i> Help desk & annual updates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan (Right) -->
+        <div class="pricing-card pricing-card-white">
+          <div class="pc-header">
+            <h3 class="pc-title">Optional Add-ons</h3>
+            <div class="pc-price-block">
+              <span class="pc-price" style="font-size:2.5rem;">Custom</span><span class="pc-period">/Quote</span>
+            </div>
+            <p class="pc-subtitle">Enhance your workflow with advanced features</p>
+          </div>
+          <button class="btn btn-primary btn-pricing">Contact us</button>
+
+          <div class="pc-features">
+            <h4 class="pc-features-title">Features:</h4>
+            <ul class="pc-feature-list">
+              <li><i class="ph-fill ph-check-circle text-green"></i> airSlate SignNow licenses</li>
+              <li><i class="ph-fill ph-check-circle text-green"></i> WhatsApp document delivery</li>
+              <li><i class="ph-fill ph-check-circle text-green"></i> Auto-create sales orders</li>
+              <li><i class="ph-fill ph-check-circle text-green"></i> Payment links tied to invoices</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials / Seventh Section -->
+    <section class="testimonials-section">
+      <div class="testimonials-header">
+        <h2 class="testimonials-heading">What Our Clients Are Saying</h2>
+        <p class="testimonials-desc">
+          See how companies are accelerating their operations and improving compliance with our SAP Business One
+          integration.
+        </p>
+      </div>
+
+      <div class="testimonials-slider-wrapper">
+        <div class="testimonials-track">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <p class="tc-review">
+              "Getting signatures used to bottleneck our sales cycle. With this SignNow integration, quotes go straight
+              from SAP Business One to the client and back in minutes. It's completely eliminated the manual
+              back-and-forth."
+            </p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background-image: url('https://i.pravatar.cc/150?img=8');"></div>
+              <div class="tc-author-info">
+                <span class="tc-name">Michael Jenkins</span>
+                <span class="tc-title">Sales Operations Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <p class="tc-review">
+              "The automatic PDF filing is brilliant. No more downloading signed contracts and manually attaching them
+              to BP master data in SAP. It happens instantly in the background, keeping our audit trails perfect without
+              any extra effort."
+            </p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background-image: url('https://i.pravatar.cc/150?img=68');"></div>
+              <div class="tc-author-info">
+                <span class="tc-name">David Chen</span>
+                <span class="tc-title">Director of IT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <p class="tc-review">
+              "We were worried about user adoption, but because it works right out of the SAP B1 interface, our team
+              picked it up immediately. The setup was painless, and Celeritech's support made sure we were running
+              perfectly from day one."
+            </p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background-image: url('https://i.pravatar.cc/150?img=47');"></div>
+              <div class="tc-author-info">
+                <span class="tc-name">Elena Rostova</span>
+                <span class="tc-title">CFO, TechTrade Logistics</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Eighth Section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+
+        <!-- Top Row -->
+        <div class="footer-top">
+          <h2 class="footer-heading">Subscribe to our newsletter</h2>
+          <div class="footer-subscribe">
+            <input type="email" placeholder="Enter your email" class="footer-input">
+            <button class="btn btn-primary btn-subscribe">Subscribe</button>
+          </div>
+        </div>
+
+        <!-- Middle Row (Links) -->
+        <div class="footer-middle">
+          <a href="#" class="footer-link">Features</a>
+          <a href="#" class="footer-link">Pricing</a>
+          <a href="#" class="footer-link">About us</a>
+          <a href="#" class="footer-link">Blog</a>
+        </div>
+
+        <!-- Bottom Row (Copyright) -->
+        <div class="footer-bottom">
+          <span class="footer-copy">© 2025 Temlis. All right Reserved</span>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Simple logic for the left/right scroll arrows
+    const slider = document.getElementById('featureSlider');
+    const btnPrev = document.getElementById('btnPrev');
+    const btnNext = document.getElementById('btnNext');
+
+    // Scroll by roughly one card width + gap (approx 420px)
+    const scrollAmount = 420;
+
+    btnPrev.addEventListener('click', () => {
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    btnNext.addEventListener('click', () => {
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+  </script>
+</body>
+
+</html>
