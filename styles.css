@@ -1537,13 +1537,13 @@ body {
 
   /* --- Global --- */
   body {
-    padding: 0.5rem;
-    gap: 0.5rem;
+    padding: 0.5rem !important;
+    gap: 0.5rem !important;
   }
 
   /* --- Navbar --- */
   .navbar-shell {
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1rem !important;
   }
 
   .nav-links {
@@ -1551,397 +1551,423 @@ body {
   }
 
   .btn-nav {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.85rem !important;
   }
 
   /* --- Hero --- */
   .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
   }
 
   .hero-content {
-    padding: 2.5rem 1.5rem 2rem;
-    border-radius: 20px;
+    padding: 2rem 1.5rem !important;
+    border-radius: 20px !important;
   }
 
   .hero-heading {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
   }
 
   .hero-desc {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
+    font-size: 0.92rem !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.5 !important;
   }
 
   .action-buttons {
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .btn-large {
-    width: 100%;
-    padding: 0.9rem 1.5rem;
-    font-size: 0.95rem;
-    justify-content: center;
+    width: 100% !important;
+    padding: 0.85rem 1.5rem !important;
+    font-size: 0.95rem !important;
+    justify-content: center !important;
+  }
+
+  .social-proof {
+    gap: 0.6rem !important;
   }
 
   .avatar-group {
-    flex-wrap: wrap;
-    gap: 0.25rem;
+    flex-wrap: wrap !important;
+  }
+
+  .avatar {
+    width: 36px !important;
+    height: 36px !important;
+    margin-left: -8px !important;
+  }
+
+  .avatar:first-child {
+    margin-left: 0 !important;
   }
 
   .customers-text {
-    font-size: 0.85rem !important;
+    font-size: 0.8rem !important;
     margin-left: 8px !important;
   }
 
   .proof-text {
-    font-size: 0.8rem;
-    line-height: 1.5;
+    font-size: 0.78rem !important;
+    line-height: 1.5 !important;
   }
 
   .hero-partner-logo {
-    width: 180px !important;
-    margin-top: 10px !important;
+    width: 160px !important;
+    margin-top: 8px !important;
   }
 
   /* Hero right column image */
   .hero-visual {
-    border-radius: 20px;
-    overflow: hidden;
+    border-radius: 20px !important;
+    overflow: hidden !important;
   }
 
   .image-placeholder-container {
-    min-height: 280px;
-    border-radius: 20px;
+    min-height: 250px !important;
+    border-radius: 20px !important;
   }
 
   /* Hide floating pills on mobile */
   .pill,
   .graph-card {
-    display: none;
+    display: none !important;
   }
 
   /* --- Mission Section --- */
   .mission-section {
-    padding: 3rem 1.5rem;
-    margin-top: 0.5rem;
-    border-radius: 20px;
+    padding: 2.5rem 1.5rem !important;
+    margin-top: 0.5rem !important;
+    border-radius: 20px !important;
   }
 
   .mission-heading {
-    font-size: 1.6rem;
-    line-height: 1.3;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .btn-mission {
-    padding: 0.85rem 2rem;
-    font-size: 0.95rem;
+    padding: 0.85rem 2rem !important;
+    font-size: 0.95rem !important;
   }
 
   /* --- Features Slider --- */
   .features-section {
-    padding: 3rem 0;
-    margin-top: 0.5rem;
-    border-radius: 20px;
+    padding: 2.5rem 0 !important;
+    margin-top: 0.5rem !important;
+    border-radius: 20px !important;
   }
 
   .features-header {
-    padding: 0 1.5rem;
-    margin-bottom: 2rem;
+    padding: 0 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .features-heading {
-    font-size: 1.6rem;
-    line-height: 1.25;
-    margin-bottom: 1rem;
+    font-size: 1.4rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .features-desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem !important;
   }
 
   .slider-track {
-    padding: 0 1.5rem 1.5rem;
-    gap: 1rem;
+    padding: 0 1.5rem 1.5rem !important;
+    gap: 1rem !important;
   }
 
   .feature-card {
-    flex: 0 0 280px;
-    min-height: 320px;
-    padding: 1.5rem;
+    flex: 0 0 270px !important;
+    min-height: 300px !important;
+    padding: 1.5rem !important;
   }
 
   .card-pill {
-    font-size: 0.75rem;
-    padding: 4px 10px;
+    font-size: 0.72rem !important;
+    padding: 3px 10px !important;
   }
 
   .card-title {
-    font-size: 1.1rem;
+    font-size: 1.05rem !important;
   }
 
   .card-desc {
-    font-size: 0.85rem;
+    font-size: 0.82rem !important;
   }
 
   .slider-mask {
-    width: 40px;
+    width: 30px !important;
   }
 
-  /* --- Success Grid (Built by Celeritech) --- */
+  /* --- Success Section (Speed up workflows) --- */
   .success-section {
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1rem !important;
+  }
+
+  .success-header {
+    margin-bottom: 2rem !important;
   }
 
   .success-heading {
-    font-size: 1.6rem;
-    line-height: 1.25;
+    font-size: 1.4rem !important;
+    line-height: 1.25 !important;
   }
 
   .success-desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem !important;
   }
 
   .success-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 
   .success-card {
-    padding: 1.5rem;
-    min-height: auto;
-    border-radius: 20px;
+    padding: 1.5rem !important;
+    min-height: auto !important;
+    border-radius: 20px !important;
   }
 
   .success-visual {
-    min-height: 200px;
-    margin-bottom: 1.5rem;
+    min-height: 180px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .ui-widget {
+    width: 240px !important;
   }
 
   .st-title {
-    font-size: 1.05rem;
+    font-size: 1rem !important;
   }
 
   .st-desc {
-    font-size: 0.85rem;
+    font-size: 0.82rem !important;
   }
 
   /* --- Core Features / Q&A --- */
   .core-features-section {
-    margin-top: 0.5rem;
+    margin-top: 0.5rem !important;
   }
 
   .core-container {
-    padding: 3rem 1.5rem;
-    border-radius: 20px;
+    padding: 2.5rem 1.5rem !important;
+    border-radius: 20px !important;
   }
 
   .core-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem !important;
   }
 
   .core-heading {
-    font-size: 1.6rem;
-    line-height: 1.25;
-    margin-bottom: 1rem;
+    font-size: 1.4rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .core-desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem !important;
   }
 
   .core-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 
   .core-image-placeholder {
-    min-height: 250px;
-    border-radius: 20px;
+    min-height: 220px !important;
+    border-radius: 20px !important;
   }
 
   .cf-card {
-    padding: 1.5rem;
-    border-radius: 16px;
+    padding: 1.25rem !important;
+    border-radius: 16px !important;
   }
 
   .cf-title {
-    font-size: 1rem;
+    font-size: 0.95rem !important;
   }
 
   .cf-desc {
-    font-size: 0.85rem;
+    font-size: 0.82rem !important;
   }
 
   /* --- Pricing --- */
   .pricing-section {
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1rem !important;
   }
 
   .pricing-heading {
-    font-size: 1.6rem;
-    line-height: 1.25;
+    font-size: 1.4rem !important;
+    line-height: 1.25 !important;
   }
 
   .pricing-desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem !important;
   }
 
   .pricing-header {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
   }
 
   .pricing-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 
   .pricing-card {
-    padding: 2rem 1.5rem;
-    border-radius: 20px;
+    padding: 1.5rem !important;
+    border-radius: 20px !important;
   }
 
   .pricing-card-light,
   .pricing-card-white {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
   .pc-price {
-    font-size: 2.5rem;
+    font-size: 2.2rem !important;
   }
 
   .pc-body {
-    padding: 1.5rem;
+    padding: 1.5rem !important;
+  }
+
+  .pc-subtitle {
+    min-height: auto !important;
   }
 
   .btn-pricing {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem !important;
   }
 
   /* --- Testimonials --- */
   .testimonials-section {
-    padding: 3rem 0;
+    padding: 2.5rem 0 !important;
   }
 
   .testimonials-header {
-    padding: 0 1.5rem;
-    margin-bottom: 2rem;
+    padding: 0 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .testimonials-heading {
-    font-size: 1.6rem;
-    line-height: 1.25;
+    font-size: 1.4rem !important;
+    line-height: 1.25 !important;
   }
 
   .testimonials-desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem !important;
   }
 
   .testimonials-track {
-    padding: 1rem 1.5rem;
-    gap: 1rem;
+    padding: 1rem 1.5rem !important;
+    gap: 1rem !important;
   }
 
   .testimonial-card {
-    width: 280px;
-    padding: 1.5rem;
-    min-height: auto;
+    width: 280px !important;
+    padding: 1.5rem !important;
+    min-height: auto !important;
   }
 
   .tc-review {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
   /* --- Footer --- */
   .site-footer {
-    padding: 1.5rem 0.5rem 1rem;
+    padding: 1rem 0.5rem 0.5rem !important;
   }
 
   .footer-container {
-    padding: 2rem 1.5rem;
-    border-radius: 20px;
+    padding: 2rem 1.5rem !important;
+    border-radius: 20px !important;
   }
 
   .footer-top {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.5rem !important;
+    margin-bottom: 2.5rem !important;
   }
 
   .footer-heading {
-    font-size: 1.6rem;
-    line-height: 1.3;
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
   }
 
   .footer-subscribe {
-    max-width: 100%;
-    flex-direction: column;
-    border-radius: 16px;
-    gap: 0.5rem;
+    max-width: 100% !important;
+    flex-direction: column !important;
+    border-radius: 16px !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem !important;
   }
 
   .footer-input {
-    font-size: 0.9rem;
-    padding: 0.8rem 1rem;
-    min-width: 0;
-    width: 100%;
+    font-size: 0.88rem !important;
+    padding: 0.8rem 1rem !important;
+    width: 100% !important;
   }
 
   .btn-subscribe {
-    padding: 0.8rem 1.2rem;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    width: 100%;
-    border-radius: 12px;
+    padding: 0.8rem 1.2rem !important;
+    font-size: 0.88rem !important;
+    width: 100% !important;
+    border-radius: 12px !important;
   }
 
   .footer-middle {
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
+    gap: 1.5rem !important;
+    margin-bottom: 2.5rem !important;
+    flex-wrap: wrap !important;
   }
 
   .footer-link {
-    font-size: 0.9rem;
+    font-size: 0.88rem !important;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem !important;
   }
 }
 
-/* Extra small screens (< 400px) */
-@media (max-width: 400px) {
+/* Extra small screens (< 480px) */
+@media (max-width: 480px) {
   .hero-heading {
-    font-size: 1.75rem;
+    font-size: 1.6rem !important;
   }
 
   .hero-content {
-    padding: 2rem 1.2rem;
+    padding: 1.5rem 1.2rem !important;
   }
 
   .feature-card {
-    flex: 0 0 260px;
+    flex: 0 0 250px !important;
+    min-height: 280px !important;
   }
 
   .testimonial-card {
-    width: 260px;
+    width: 260px !important;
   }
 
-  .footer-subscribe {
-    border-radius: 16px;
-    padding: 0.4rem;
+  .pricing-card {
+    padding: 1.25rem !important;
   }
 
-  .btn-subscribe {
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 0.25rem;
+  .mission-heading {
+    font-size: 1.2rem !important;
   }
 }
