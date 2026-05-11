@@ -111,7 +111,9 @@
             Request a Demo
             <i class="ph ph-arrow-right"></i>
           </a>
-          <button class="btn btn-outline btn-large">Watch 2-Min Video</button>
+          <button class="btn btn-outline btn-large" id="watchVideoBtn" onclick="openVideoModal()">
+            <i class="ph ph-play-circle"></i> Watch 2-Min Video
+          </button>
         </div>
 
         <div class="social-proof">
@@ -676,21 +678,70 @@
 
   </div>
 
-  <script>
-    // Simple logic for the left/right scroll arrows
-    const slider = document.getElementById('featureSlider');
-    const btnPrev = document.getElementById('btnPrev');
-    const btnNext = document.getElementById('btnNext');
+  <!-- Video Modal Overlay -->
+  <div id="videoModal" class="video-modal-overlay" onclick="handleModalClick(event)" role="dialog" aria-modal="true" aria-label="Product demo video">
+    <div class="video-modal-container">
+      <button class="video-modal-close" onclick="closeVideoModal()" aria-label="Close video">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="video-modal-inner">
+        <video
+          id="demoVideo"
+          class="video-modal-player"
+          controls
+          playsinline
+          preload="none"
+          poster=""
+        >
+          <source src="https://ik.imagekit.io/kusosheutk/signnow%20SAP%20employees%20docuemnts%20final.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
 
-    // Scroll by roughly one card width + gap (approx 420px)
+  <script>
+    // ── Feature slider ──────────────────────────────────────────
+    const slider    = document.getElementById('featureSlider');
+    const btnPrev   = document.getElementById('btnPrev');
+    const btnNext   = document.getElementById('btnNext');
     const scrollAmount = 420;
 
     btnPrev.addEventListener('click', () => {
       slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
-
     btnNext.addEventListener('click', () => {
       slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    // ── Video modal ──────────────────────────────────────────────
+    const videoModal = document.getElementById('videoModal');
+    const demoVideo  = document.getElementById('demoVideo');
+
+    function openVideoModal() {
+      videoModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      // Small delay so the transition looks intentional
+      setTimeout(() => demoVideo.play(), 300);
+    }
+
+    function closeVideoModal() {
+      videoModal.classList.remove('is-open');
+      document.body.style.overflow = '';
+      demoVideo.pause();
+      demoVideo.currentTime = 0;
+    }
+
+    function handleModalClick(e) {
+      // Close only when clicking the dark backdrop, not the video container
+      if (e.target === videoModal) closeVideoModal();
+    }
+
+    // Keyboard: Escape closes the modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && videoModal.classList.contains('is-open')) {
+        closeVideoModal();
+      }
     });
   </script>
 </body>
